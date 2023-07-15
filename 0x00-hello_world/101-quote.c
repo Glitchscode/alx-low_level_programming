@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (success)
  *
- * write: A function used to write to a file
+ * fwrite: A function used to write to a file
  */
 int main(void)
 {
