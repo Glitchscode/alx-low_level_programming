@@ -1,43 +1,39 @@
-	.text
-	.syntax unified
-	.eabi_attribute	67, "2.09"	@ Tag_conformance
-	.eabi_attribute	6, 10	@ Tag_CPU_arch
-	.eabi_attribute	7, 65	@ Tag_CPU_arch_profile
-	.eabi_attribute	8, 1	@ Tag_ARM_ISA_use
-	.eabi_attribute	9, 2	@ Tag_THUMB_ISA_use
-	.fpu	neon
-	.eabi_attribute	34, 1	@ Tag_CPU_unaligned_access
-	.eabi_attribute	15, 1	@ Tag_ABI_PCS_RW_data
-	.eabi_attribute	16, 1	@ Tag_ABI_PCS_RO_data
-	.eabi_attribute	17, 2	@ Tag_ABI_PCS_GOT_use
-	.eabi_attribute	20, 1	@ Tag_ABI_FP_denormal
-	.eabi_attribute	21, 0	@ Tag_ABI_FP_exceptions
-	.eabi_attribute	23, 3	@ Tag_ABI_FP_number_model
-	.eabi_attribute	24, 1	@ Tag_ABI_align_needed
-	.eabi_attribute	25, 1	@ Tag_ABI_align_preserved
-	.eabi_attribute	38, 1	@ Tag_ABI_FP_16bit_format
-	.eabi_attribute	18, 4	@ Tag_ABI_PCS_wchar_t
-	.eabi_attribute	26, 2	@ Tag_ABI_enum_size
-	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.file	"main.c"
-	.globl	main                            @ -- Begin function main
-	.p2align	2
-	.type	main,%function
-	.code	32                              @ @main
+	.intel_syntax noprefix
+	.text
+	.globl	main
+	.type	main, @function
 main:
-	.fnstart
-@ %bb.0:
-	.pad	#4
-	sub	sp, sp, #4
-	movw	r0, #0
-	str	r0, [sp]
-	movw	r0, #0
-	add	sp, sp, #4
-	bx	lr
-.Lfunc_end0:
-	.size	main, .Lfunc_end0-main
-	.cantunwind
-	.fnend
-                                        @ -- End function
-	.ident	"clang version 16.0.6"
-	.section	".note.GNU-stack","",%progbits
+.LFB0:
+	.cfi_startproc
+	endbr64
+	push	rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	mov	rbp, rsp
+	.cfi_def_cfa_register 6
+	mov	eax, 0
+	pop	rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	main, .-main
+	.ident	"GCC: (Ubuntu 11.3.0-1ubuntu1~22.04.1) 11.3.0"
+	.section	.note.GNU-stack,"",@progbits
+	.section	.note.gnu.property,"a"
+	.align 8
+	.long	1f - 0f
+	.long	4f - 1f
+	.long	5
+0:
+	.string	"GNU"
+1:
+	.align 8
+	.long	0xc0000002
+	.long	3f - 2f
+2:
+	.long	0x3
+3:
+	.align 8
+4:
