@@ -1,10 +1,7 @@
 #include "main.h"
 /**
- * main - print a to z 10x
- *
- * Return: Always 0
- *
- * print_alphabet_x10 - return alphabets from a to z 10x
+ * print_alphabet_x10 - A function that prints a to z 10x
+ * Return: It does not return anything
  */
 void print_alphabet_x10(void)
 {
