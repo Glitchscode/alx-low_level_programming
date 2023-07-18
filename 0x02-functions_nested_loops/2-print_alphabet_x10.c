@@ -4,9 +4,9 @@
  *
  * Return: Always 0
  *
- * print_alphabet_x10: return alphabets from a to z 10x
+ * print_alphabet_x10 - return alphabets from a to z 10x
  */
-void print_alphabet_x10(void)/*return alphabets*/
+void print_alphabet_x10(void)
 {
 	int i = 1;
 
