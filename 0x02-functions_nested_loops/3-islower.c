@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints if an alphabet is lower or upper case
+ * _islower - prints if an alphabet is lower or upper case
+ * @c: holds the alphabets
  *
  * Return: either 1 or 0
  */

@@ -1,15 +1,14 @@
 #include "main.h"
 /**
- * main - prints "abcdefghijklmnopqrstuvwxyz"
- *
- * Return: Always 0
  * print_alphabet: print a to z
+ *
+ * Return: It returns nothing
  */
 void print_alphabet(void)
 {
 	char ch;
-	ch = 'a';
 
+	ch = 'a';
 	while (ch <= 'z')
 	{
 		_putchar(ch);
