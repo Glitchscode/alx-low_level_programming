@@ -1,23 +1,23 @@
 #include "main.h"
 /**
+ * _abs - A function to get the absolute value of an integer
+ * @N: this parameter stores integer values
  *
- *
- *
+ * Return: it returns the absolute value of a given value
  */
-int _abs(int abs)
+int _abs(int N)
 {
-	if (abs > 0)
+	if (N > 0)
 	{
-		_putchar(abs);
+		return (N);
 	}
-	else if (abs == 0)
+	else if ( N == 0)
 	{
-		_putchar('0');
+		return (N);
 	}
-	else if (abs < 0)
+	else if (N < 0)
 	{
-		abs = abs * -1;
-		_putchar(abs);
+		return (-N);
 	}
 	return (0);
 }
