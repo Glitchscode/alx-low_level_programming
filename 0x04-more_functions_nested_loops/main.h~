@@ -1,0 +1,7 @@
+#ifndef HEADER_FILE
+#define HEADER_FILEint
+
+_putchar(char c);
+int _isupper(int c);
+
+#endif
