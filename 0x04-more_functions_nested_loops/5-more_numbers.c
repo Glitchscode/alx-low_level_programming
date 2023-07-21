@@ -19,10 +19,8 @@ void more_numbers(void)
 				if (digit1 == 1)
 				{
 					_putchar((digit1) + '0');
-					_putchar((digit2) + '0');
 				}
-				else
-					_putchar((digit2) + '0');
+				_putchar((digit2) + '0');
 				if (digit2 == 4 && digit1 == 1)
 				{
 					break;
