@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - prints its name followed by a new line.
@@ -6,8 +7,8 @@
  *
  * return: Always zero.
  */
-int main (int argc __attribute__((unused)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	_puts(argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
