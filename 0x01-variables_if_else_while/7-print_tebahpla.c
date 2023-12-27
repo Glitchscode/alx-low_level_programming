@@ -1,10 +1,13 @@
 #include <stdio.h>
 /**
- * main - print 
+ * main - It prints small letters from z to a
  *
- * Return: Always 0 
+ * Return: Always zero
+ *
+ * c: stores the ASCII value of the alphabet
+ *
+ * putchar: prints the values of c in char data type
  */
-
 int main(void)
 {
 	char c;
