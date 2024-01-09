@@ -1,22 +1,31 @@
 #include <stdio.h>
 /**
- * main - prints all 
+ * main - prints all numbers from 0 to 9 separted by space and comma
  *
- * Return: Always 0
+ * Return: Always zero
+ *
+ * putchar: prints the value of i in int data type
+ *
+ * i: stores the numbers
  *
  */
 
 int main(void)
 {
 	int i;
-	i = '0';
-	while (i <= '8')
+
+	i = 48;
+	while (i <= 57)
 	{
-	      putchar(i);
-	      putchar(',');
-	      putchar(' ');
-	      i++;
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		i++;
 	}
-	putchar('9');
+	putchar('\n');
+
 	return (0);
 }

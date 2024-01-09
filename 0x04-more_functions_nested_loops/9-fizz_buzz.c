@@ -1,33 +1,33 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - fizz buzz
- *
- * Return: Always 0
+ * main - the main function
+ * Return: always zero
  */
 int main(void)
 {
-	int i;
+	int i, three, five;
 
 	for (i = 1; i <= 100; i++)
 	{
-		if ((i % 3) == 0 && \
-(i % 5) == 0)
-                {
-                        printf("FizzBuzz\
-");
-                }
-		else if ((i % 3) == 0)
+		three = i % 3;
+		five = i % 5;
+		if (three == 0 && five == 0)
 		{
-			printf("Fizz");
+			printf("FizzBuzz ");
 		}
-		else if ((i % 5) == 0)
+		else if (five == 0)
 		{
-			printf("Buzz");
+			printf("Buzz ");
+		}
+		else if (three == 0)
+		{
+			printf("Fizz ");
 		}
 		else
-			printf("%d", i);
-		putchar(' ');
+		{
+			printf("%d ", i);
+		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
