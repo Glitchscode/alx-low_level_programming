@@ -2,8 +2,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *
- *
+ * create_array - creates an array of chars, and initializes it with a specific
+ * char
+ * @size: the size of the array
+ * @c: the character.
+ * Return: the array.
  */
 char *create_array(unsigned int size, char c)
 {
@@ -19,5 +22,5 @@ char *create_array(unsigned int size, char c)
 	{
 		ar[n] = c;
 	}
-	return ar;
+	return (ar);
 }
