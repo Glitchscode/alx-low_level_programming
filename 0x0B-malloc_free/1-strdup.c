@@ -9,7 +9,7 @@
  */
 char *_strdup(char *str)
 {
-	int i, len;
+	unsigned int i, len;
 	char *c;
 
 	for (i = 0; str[i] != '\0'; i++)
