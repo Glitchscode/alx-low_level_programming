@@ -24,17 +24,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 	for (i = 0; s1[i] != '\0'; i++)
-	{
 		;
-	}
 	for (j = 0; s2[j] != '\0'; j++)
-	{
 		;
-	}
 	if (num < 0)
-	{
 		return (NULL);
-	}
 	if (num >= j)
 	{
 		num = j;
