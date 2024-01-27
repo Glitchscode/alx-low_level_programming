@@ -3,32 +3,26 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- * sum_them_all - sum all arguments
- * @n: number of arguments
- * Return: returns the sum of all arguments
+ * print_all - sum all arguments
+ * @format: number of arguments
  */
 void print_all(const char * const format, ...)
 {
 	char *str, *sep = "";
-	int i, in, len;
+	int i, in;
 	char c;
 	float f;
 	va_list ptr;
 
 	va_start(ptr, format);
 	i = 0;
-	len = 0;
-	while (format[i] != '\0')
-	{
-		len++;
-		i++;
-	}
-	i = 0;
 	while (format && format[i] != '\0')
 	{
 		if (format[i] == 's')
 		{
 			str = va_arg(ptr, char *);
+			if (!str)
+				str = "(nil)";
 			printf("%s%s", sep, str);
 		}
 		else if (format[i] == 'i')
